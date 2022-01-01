@@ -1,5 +1,5 @@
 <template>
-	<div class="block">click me</div>
+	<div class="block" v-if="showBlock">click me</div>
 </template>
 
 <script>
@@ -11,7 +11,13 @@ export default {
 		};
 	},
 	mounted() {
+		setTimeout(() => {
+			this.showBlock = true;
+		}, this.delay);
 		console.log('component mounted');
+	},
+	updated() {
+		console.log('component update');
 	},
 };
 </script>

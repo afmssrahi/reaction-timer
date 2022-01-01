@@ -1,7 +1,7 @@
 <template>
 	<h1>Reaction Timer App</h1>
 	<button @click="start" :disabled="isPlaying">Play</button>
-	<Block v-if="isPlaying" :delay="delay" />
+	<!-- <Block v-if="isPlaying" :delay="delay" /> -->
 </template>
 
 <script>

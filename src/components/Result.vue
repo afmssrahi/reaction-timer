@@ -13,9 +13,9 @@ export default {
 		};
 	},
 	mounted() {
-		if (this.reactionTime < 0.3) {
+		if (this.reactionTime < 0.6) {
 			this.rank = 'Ninja Reaction... :)';
-		} else if (this.reactionTime < 0.6) {
+		} else if (this.reactionTime < 0.8) {
 			this.rank = 'Rapid Reflexes...';
 		} else {
 			this.rank = 'Snail Pace... :(';
